@@ -1,1 +1,2 @@
-//pause = false;
+revenue = 0;
+pause = false;
