@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oNPC",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oPlayer",
+  "eventList":[],
   "managed":true,
-  "name":"oNPC",
+  "name":"oPlayer",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sElon",
-    "path":"sprites/sElon/sElon.yy",
+    "name":"sPrime_minister",
+    "path":"sprites/sPrime_minister/sPrime_minister.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,2 +1,1 @@
-revenue = 0;
-pause = false;
+player_choice = "WAITING";
