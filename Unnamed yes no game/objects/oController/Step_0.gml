@@ -39,3 +39,11 @@ if (keyboard_check_pressed(vk_f11)) {
     // before we recalculate the surface sizes.
     alarm[0] = 1; 
 }
+
+// Increasing NPC limit depending on the day
+if (day == 1)
+	npc_limit = 5;
+else if (day == 2)
+	npc_limit = 10;
+else if (day == 3)
+	npc_limit = 15;

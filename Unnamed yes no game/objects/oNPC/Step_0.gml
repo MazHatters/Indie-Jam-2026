@@ -3,6 +3,7 @@ if (!instance_exists(oController)) exit;
 switch (state)
 {
 	case "ENTERING":
+		image_xscale = 1;
 		if (x > target_x)
 			x -= walk_speed;
 		else
@@ -73,6 +74,7 @@ switch (state)
 	break;
 
 	case "EXITING":
+	image_xscale = -1;
 		x += walk_speed;
 		if (x >= 1408)
 		{

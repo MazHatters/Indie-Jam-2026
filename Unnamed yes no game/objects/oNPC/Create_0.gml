@@ -30,7 +30,7 @@ target_x = 544;
 x = 1408;
 y = 512;
 
-depth = -1000;
+//depth = -1;
 
 // --- TYPEWRITER CONFIG ---
 char_count = 0;           // How many characters to show right now
