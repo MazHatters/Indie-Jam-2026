@@ -21,4 +21,6 @@ npc_limit = 0;
 day1_quota = 400;
 day2_quota = 800;
 day3_quota = 1200;
+revenue = 0;
+nature = 0;
 player_choice = "WAITING";

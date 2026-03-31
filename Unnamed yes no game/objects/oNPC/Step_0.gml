@@ -1,4 +1,4 @@
-if (!instance_exists(oController)) exit;
+if (!instance_exists(oController)) exit; // <- Unlikely possible as oController is persistent
 
 switch (state)
 {
@@ -33,8 +33,8 @@ switch (state)
 				if (dialogue_step > 3)
 				{
 					state = "DECIDING";
-					instance_create_layer(352, 256, "Dialog_and_choice", oButton_approve);
-					instance_create_layer(800, 256, "Dialog_and_choice", oButton_reject);
+					instance_create_layer(352, 256, "Dialog_choice_revenue", oButton_approve);
+					instance_create_layer(800, 256, "Dialog_choice_revenue", oButton_reject);
 				}
 				else
 				{
@@ -51,6 +51,9 @@ switch (state)
 			full_text = current_response; // Set typewriter to response text
 			char_count = 0;
 			state = "RESPONSE";
+			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
+			_ft.text_color = c_yellow;
+			_ft.float_direction = 1;
 			io_clear();
 		} 
 		else if (oController.player_choice == "REJECT")
@@ -59,6 +62,9 @@ switch (state)
 			full_text = current_response;
 			char_count = 0;
 			state = "RESPONSE";
+			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
+			_ft.text_color = c_red;
+			_ft.float_direction = -1;
 			io_clear();
 		}
 	break;
