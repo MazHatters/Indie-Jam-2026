@@ -11,6 +11,7 @@ if (array_length(oController.npc_master_list) > 0)
 	yes_text = chosen.approve;
 	no_text = chosen.reject;
 	sprite_index = chosen.sprite;
+	oController.npc_count += 1;
 }
 else
 {
