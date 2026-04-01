@@ -10,6 +10,8 @@ if (array_length(oController.npc_master_list) > 0)
 	text3 = chosen.dialogue3;
 	yes_text = chosen.approve;
 	no_text = chosen.reject;
+	profit = chosen.gain;
+	lose = chosen.lost;
 	sprite_index = chosen.sprite;
 	oController.npc_count += 1;
 }

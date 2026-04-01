@@ -52,6 +52,7 @@ switch (state)
 			char_count = 0;
 			state = "RESPONSE";
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
+			_ft.text = profit;
 			_ft.text_color = c_yellow;
 			_ft.float_direction = 1;
 			io_clear();
@@ -63,6 +64,7 @@ switch (state)
 			char_count = 0;
 			state = "RESPONSE";
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
+			_ft.text = lose;
 			_ft.text_color = c_red;
 			_ft.float_direction = -1;
 			io_clear();
