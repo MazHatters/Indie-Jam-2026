@@ -11,6 +11,7 @@
     {"name":"inst_43FF4E68","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_1EA5CD99","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_154A8016","path":"rooms/Gameplay/Gameplay.yy",},
+    {"name":"inst_9E27F68","path":"rooms/Gameplay/Gameplay.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -28,6 +29,7 @@
     {"$GMRInstanceLayer":"","%Name":"TV","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2EB9947B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2EB9947B","objectId":{"name":"oLeft_tv","path":"objects/oLeft_tv/oLeft_tv.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.1230769,"scaleY":1.2038217,"x":32.0,"y":128.0,},
         {"$GMRInstance":"v4","%Name":"inst_43FF4E68","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_43FF4E68","objectId":{"name":"oRight_tv","path":"objects/oRight_tv/oRight_tv.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.1230769,"scaleY":1.2038217,"x":416.0,"y":128.0,},
+        {"$GMRInstance":"v4","%Name":"inst_9E27F68","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9E27F68","objectId":{"name":"oCity","path":"objects/oCity/oCity.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":96.0,},
       ],"layers":[],"name":"TV","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"Gameplay",

@@ -16,18 +16,52 @@ if (show_result)
     var _cx = _gw / 2;
     var _cy = _gh / 2;
 
-    if (revenue >= day3_quota)
-    {
-        draw_set_color(c_lime); // Try lime, might show up better than green
-        draw_text(_cx, _cy - 100, "Project Succeeded!");
-        draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
-    }
-    else
-    {
-        draw_set_color(c_red);
-        draw_text(_cx, _cy - 100, "Project Failed!");
-        draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
-    }
+
+	if (oController.day == 1)
+	{
+		if (oController.revenue >= oController.day1_quota)
+		{
+			draw_set_color(c_lime); // Try lime, might show up better than green
+			draw_text(_cx, _cy - 100, "Project Succeeded!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
+		}
+		else
+		{
+			draw_set_color(c_red);
+			draw_text(_cx, _cy - 100, "Project Failed!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
+		}
+	}						
+	else if (oController.day == 2)
+	{
+		if (oController.revenue >= oController.day2_quota)
+		{
+			draw_set_color(c_lime); // Try lime, might show up better than green
+			draw_text(_cx, _cy - 100, "Project Succeeded!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
+		}
+		else
+		{
+			draw_set_color(c_red);
+			draw_text(_cx, _cy - 100, "Project Failed!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
+		}
+	}
+	else if (oController.day == 3)
+	{
+		if (oController.revenue >= oController.day3_quota)
+		{
+			draw_set_color(c_lime); // Try lime, might show up better than green
+			draw_text(_cx, _cy - 100, "Project Succeeded!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
+		}
+		else
+		{
+			draw_set_color(c_red);
+			draw_text(_cx, _cy - 100, "Project Failed!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
+		}
+	}	
 
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);

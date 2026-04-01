@@ -41,6 +41,7 @@
     {"id":{"name":"oButton_quit","path":"objects/oButton_quit/oButton_quit.yy",},},
     {"id":{"name":"oButton_reject","path":"objects/oButton_reject/oButton_reject.yy",},},
     {"id":{"name":"oButton_restart_room","path":"objects/oButton_restart_room/oButton_restart_room.yy",},},
+    {"id":{"name":"oCity","path":"objects/oCity/oCity.yy",},},
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
     {"id":{"name":"oFloatingText","path":"objects/oFloatingText/oFloatingText.yy",},},
     {"id":{"name":"oLeft_tv","path":"objects/oLeft_tv/oLeft_tv.yy",},},
