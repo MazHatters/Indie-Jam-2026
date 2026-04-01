@@ -1,4 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(rMain_menu);
+oController.npc_count = 0;
+oController.revenue = 0;
+oController.show_result = false;
+room_goto(Main_menu);

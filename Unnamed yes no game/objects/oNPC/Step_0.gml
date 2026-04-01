@@ -132,7 +132,7 @@ switch (state)
 						}
 						else
 						{
-							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_room);
+							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_r6oom);
 							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
 						}
 					}	
