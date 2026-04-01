@@ -51,8 +51,9 @@ switch (state)
 			full_text = current_response; // Set typewriter to response text
 			char_count = 0;
 			state = "RESPONSE";
+			oController.revenue += profit;
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
-			_ft.text = profit;
+			_ft.text = (profit >= 0 ? "+" : "") + string(profit);
 			_ft.text_color = c_yellow;
 			_ft.float_direction = 1;
 			io_clear();
@@ -63,8 +64,9 @@ switch (state)
 			full_text = current_response;
 			char_count = 0;
 			state = "RESPONSE";
+			oController.revenue += lose;
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
-			_ft.text = lose;
+			_ft.text = string(lose);
 			_ft.text_color = c_red;
 			_ft.float_direction = -1;
 			io_clear();
@@ -87,7 +89,57 @@ switch (state)
 		if (x >= 1408)
 		{
 			oController.player_choice = "WAITING";
-			event_perform(ev_create, 0);
+			if (oController.npc_count >= oController.npc_limit)
+			{
+				if (!oController.show_result)
+				{
+					oController.show_result = true;
+					var _cx = room_width / 2;
+					var _cy = room_height / 2;
+					// Checks the day quota for all 3 days
+					if (oController.day == 1)
+					{
+						if (oController.revenue >= oController.day1_quota)
+						{
+							if (!instance_exists(oButton_nextday))
+								instance_create_depth(room_width / 2, room_height / 2, -20, oButton_nextday);
+						}
+						else
+						{
+							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_room);
+							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
+						}
+					}						
+					else if (oController.day == 2)
+					{
+						if (oController.revenue >= oController.day2_quota)
+						{
+							if (!instance_exists(oButton_nextday))
+								instance_create_depth(room_width / 2, room_height / 2, -20, oButton_nextday);
+						}
+						else
+						{
+							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_room);
+							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
+						}
+					}
+					else if (oController.day == 3)
+					{
+						if (oController.revenue >= oController.day3_quota)
+						{
+							if (!instance_exists(oButton_nextday))
+								instance_create_depth(room_width / 2, room_height / 2, -20, oButton_nextday);
+						}
+						else
+						{
+							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_room);
+							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
+						}
+					}	
+				}
+			}
+			else
+				event_perform(ev_create, 0);
 		}
 	break;
 }
