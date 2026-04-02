@@ -22,7 +22,17 @@
     {"$GMFolder":"","%Name":"Town background","folderPath":"folders/Town background.yy","name":"Town background","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"accpeted.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"accpeted.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"background-cheerful.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"background-cheerful.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"case-oh-footsteps.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"case-oh-footsteps.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"footsteps-long.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"footsteps-long.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"high-pitch-talking.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"high-pitch-talking.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"menu rollover.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"menu rollover.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"menu selection.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"menu selection.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"rejected.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"rejected.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"thinking.wav","CopyToMask":-1,"filePath":"datafiles/sfx","name":"thinking.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{

@@ -5,6 +5,16 @@ var _gh = display_get_gui_height();
 // Identify which child is calling this and set its position
 switch (object_index)
 {
+	case oButton_approve:
+		x = (_gw / 2) - 200;
+		y = (_gh / 2) - 200;
+	break;
+	
+	case oButton_reject:
+		x = (_gw / 2) + 200;
+		y = (_gh / 2) - 200;
+	break;
+	
 	case oButton_nextday:
 		x = _gw / 2;
 		y = (_gh / 2) + 100;

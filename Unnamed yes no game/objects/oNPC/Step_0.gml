@@ -33,8 +33,8 @@ switch (state)
 				if (dialogue_step > 3)
 				{
 					state = "DECIDING";
-					instance_create_layer(352, 256, "Dialog_choice_revenue", oButton_approve);
-					instance_create_layer(800, 256, "Dialog_choice_revenue", oButton_reject);
+					//instance_create_layer(352, 256, "Dialog_choice_revenue", oButton_approve);
+					//instance_create_layer(800, 256, "Dialog_choice_revenue", oButton_reject);
 				}
 				else
 				{
