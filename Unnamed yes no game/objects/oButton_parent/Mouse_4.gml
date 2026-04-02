@@ -2,10 +2,13 @@
 var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
 
-mask_index = sprite_index;
+// Use the gui_x/y variables we set in the Step event
+var _w2 = sprite_get_width(sprite_index) / 2;
+var _h2 = sprite_get_height(sprite_index) / 2;
 
-// Check if the GUI mouse is over THIS specific button instance
-if (position_meeting(_mx, _my, id))
+// Use point_in_rectangle to bypass room physics and check GUI pixels directly
+// Assumes Sprite Origin is set to "Middle Center"tance
+if (point_in_rectangle(_mx, _my, gui_x - _w2, gui_y - _h2, gui_x + _w2, gui_y + _h2))
 {
 	switch (object_index)
 	{
@@ -48,6 +51,10 @@ if (position_meeting(_mx, _my, id))
 		break;
 
 		case oButton_mainmenu:
+			oController.npc_count = 0;
+			oController.revenue = 0;
+			oController.show_result = false;
+			oController.day = 1;
 			room_goto(Main_menu);
 		break;
 	}

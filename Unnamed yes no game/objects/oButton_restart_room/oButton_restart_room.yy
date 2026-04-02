@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sRestart1",
+    "path":"sprites/sRestart1/sRestart1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

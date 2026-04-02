@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sMenu1",
+    "path":"sprites/sMenu1/sMenu1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
