@@ -17,32 +17,36 @@ if (position_meeting(_mx, _my, id))
 		
 		case oButton_approve:
 			oController.player_choice = "APPROVE";
-			oController.can_vote = false;
 			instance_destroy(oButton_reject);
 			instance_destroy();
 		break;
 		
 		case oButton_reject:
 			oController.player_choice = "REJECT";
-			oController.can_vote = false;
 			instance_destroy(oButton_approve);
 			instance_destroy();
 		break;
 		
 		case oButton_nextday:
 			// Reset for next round
+			oController.npc_count = 0;
 			oController.show_result = false;
 			oController.revenue = 0;
 			oController.day += 1;
-			room_restart();
+			instance_destroy();
+			with(oNPC) { event_perform(ev_create, 0); }
 		break;
 
 		case oButton_restart_room:
+			oController.npc_count = 0;
+			oController.revenue = 0;
+			oController.show_result = false;
+			oController.day = 1;
 			room_restart();
 		break;
 
 		case oButton_mainmenu:
-			room_goto(rm_MainMenu); // Ensure your room name is correct
+			room_goto(Main_menu);
 		break;
 	}
 }
