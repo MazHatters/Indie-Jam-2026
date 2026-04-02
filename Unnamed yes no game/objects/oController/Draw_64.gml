@@ -1,83 +1,47 @@
 if (show_result)
 {
-    var _gw = display_get_gui_width();
-    var _gh = display_get_gui_height();
+	var _gw = display_get_gui_width();
+	var _gh = display_get_gui_height();
+	var _cx = _gw / 2;
+	var _cy = _gh / 2;
 
-    // Draw semi-transparent background
-    draw_set_color(c_black);
-    draw_set_alpha(0.5);
-    draw_rectangle(0, 0, _gw, _gh, false);
-    draw_set_alpha(1.0);
+	// 1. Draw Background Dimmer (Drawn at depth 0)
+	draw_set_color(c_black);
+	draw_set_alpha(0.5);
+	draw_rectangle(0, 0, _gw, _gh, false);
+	draw_set_alpha(1.0);
 
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(Font1);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	draw_set_font(Font1);
 
-    var _cx = _gw / 2;
-    var _cy = _gh / 2;
-	var _bx = room_width / 2;
-	var _by = room_height / 2;
+	// 2. Mission Success/Failure Logic
+	var _target_quota = (day == 1) ? day1_quota : ((day == 2) ? day2_quota : day3_quota);
 
-
-	if (oController.day == 1)
+	if (revenue >= _target_quota)
 	{
-		if (oController.revenue >= oController.day1_quota)
-		{
-			if (!instance_exists(oButton_nextday))
-				instance_create_depth(room_width / 2,  (room_height / 2) + 100,  -10, oButton_nextday);
-			draw_set_color(c_lime); // Try lime, might show up better than green
-			draw_text(_cx, _cy - 100, "Project Succeeded!");
-			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
-		}
-		else
-		{
-			instance_create_depth(_bx - 150, _by + 150, -20, oButton_restart_room);
-			instance_create_depth(_bx + 150, _by + 150, -20, oButton_mainmenu);
-			draw_set_color(c_red);
-			draw_text(_cx, _cy - 100, "Project Failed!");
-			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
-		}
-	}						
-	else if (oController.day == 2)
-	{
-		if (oController.revenue >= oController.day2_quota)
-		{
-			if (!instance_exists(oButton_nextday))
-				instance_create_depth(room_width / 2,  (room_height / 2) + 100,  -10, oButton_nextday);
-			draw_set_color(c_lime); // Try lime, might show up better than green
-			draw_text(_cx, _cy - 100, "Project Succeeded!");
-			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
-		}
-		else
-		{
-			instance_create_depth(_bx - 150, _by + 150, -20, oButton_restart_room);
-			instance_create_depth(_bx + 150, _by + 150, -20, oButton_mainmenu);
-			draw_set_color(c_red);
-			draw_text(_cx, _cy - 100, "Project Failed!");
-			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
-		}
+		// Spawn exactly once
+		if (!instance_exists(oButton_nextday)) instance_create_depth(0, 0, -1000, oButton_nextday);
+		
+		draw_set_color(c_lime);
+		draw_text(_cx, _cy - 100, "Project Succeeded!");
+		draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
 	}
-	else if (oController.day == 3)
+	else
 	{
-		if (oController.revenue >= oController.day3_quota)
+		// Spawn exactly once
+		if (!instance_exists(oButton_restart_room)) 
 		{
-			if (!instance_exists(oButton_nextday))
-				instance_create_depth(room_width / 2,  (room_height / 2) + 100,  -10, oButton_nextday);
-			draw_set_color(c_lime); // Try lime, might show up better than green
-			draw_text(_cx, _cy - 100, "Project Succeeded!");
-			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
+			instance_create_depth(0, 0, -1000, oButton_restart_room);
+			instance_create_depth(0, 0, -1000, oButton_mainmenu);
 		}
-		else
-		{
-			instance_create_depth(_bx - 150, _by + 150, -20, oButton_restart_room);
-			instance_create_depth(_bx + 150, _by + 150, -20, oButton_mainmenu);
-			draw_set_color(c_red);
-			draw_text(_cx, _cy - 100, "Project Failed!");
-			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
-		}
-	}	
+		
+		draw_set_color(c_red);
+		draw_text(_cx, _cy - 100, "Project Failed!");
+		draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(_target_quota));
+	}
 
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_set_color(c_white);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	draw_set_color(c_white);
 }
