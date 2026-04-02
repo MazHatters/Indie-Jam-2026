@@ -36,6 +36,9 @@
     "name":"sMenu1",
     "path":"sprites/sMenu1/sMenu1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sMenu1",
+    "path":"sprites/sMenu1/sMenu1.yy",
+  },
   "visible":true,
 }

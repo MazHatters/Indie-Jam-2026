@@ -36,6 +36,9 @@
     "name":"sRestart1",
     "path":"sprites/sRestart1/sRestart1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sRestart1",
+    "path":"sprites/sRestart1/sRestart1.yy",
+  },
   "visible":true,
 }

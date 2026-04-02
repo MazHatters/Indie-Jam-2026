@@ -23,7 +23,7 @@
   ],
   "name":"sReject2",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Button_sprites",
     "path":"folders/Sprites/Button_sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":90,
-    "yorigin":59,
+    "yorigin":29,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

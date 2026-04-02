@@ -36,6 +36,9 @@
     "name":"sPlay1",
     "path":"sprites/sPlay1/sPlay1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sPlay1",
+    "path":"sprites/sPlay1/sPlay1.yy",
+  },
   "visible":true,
 }

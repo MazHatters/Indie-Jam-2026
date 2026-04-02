@@ -36,6 +36,9 @@
     "name":"sReject1",
     "path":"sprites/sReject1/sReject1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sReject1",
+    "path":"sprites/sReject1/sReject1.yy",
+  },
   "visible":true,
 }

@@ -36,6 +36,9 @@
     "name":"sNext1",
     "path":"sprites/sNext1/sNext1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sNext1",
+    "path":"sprites/sNext1/sNext1.yy",
+  },
   "visible":true,
 }

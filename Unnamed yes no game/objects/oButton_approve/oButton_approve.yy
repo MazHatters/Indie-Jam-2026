@@ -36,6 +36,9 @@
     "name":"sApprove1",
     "path":"sprites/sApprove1/sApprove1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sApprove1",
+    "path":"sprites/sApprove1/sApprove1.yy",
+  },
   "visible":true,
 }

@@ -36,6 +36,9 @@
     "name":"sQuit1",
     "path":"sprites/sQuit1/sQuit1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sQuit1",
+    "path":"sprites/sQuit1/sQuit1.yy",
+  },
   "visible":true,
 }
