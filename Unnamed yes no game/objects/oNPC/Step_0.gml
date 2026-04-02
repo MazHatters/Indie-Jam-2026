@@ -57,8 +57,16 @@ switch (state)
 			oController.revenue += profit;
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
 			_ft.text = (profit >= 0 ? "+" : "") + string(profit);
-			_ft.text_color = c_yellow;
-			_ft.float_direction = 1;
+			if (profit >= 0)
+			{
+				_ft.text_color = c_yellow;
+				_ft.float_direction = 1;
+			}
+			else if (profit < 0)
+			{
+				_ft.text_color = c_red;
+				_ft.float_direction = -1;
+			}
 			io_clear();
 		} 
 		else if (oController.player_choice == "REJECT")
@@ -70,8 +78,16 @@ switch (state)
 			oController.revenue += lose;
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
 			_ft.text = string(lose);
-			_ft.text_color = c_red;
-			_ft.float_direction = -1;
+			if (lose >= 0)
+			{
+				_ft.text_color = c_yellow;
+				_ft.float_direction = 1;
+			}
+			else if (lose < 0)
+			{
+				_ft.text_color = c_red;
+				_ft.float_direction = -1;
+			}
 			io_clear();
 		}
 	break;
