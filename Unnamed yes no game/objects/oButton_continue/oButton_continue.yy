@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"oButton_continue",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"oButton_continue",
   "overriddenProperties":[

@@ -2,6 +2,8 @@
 var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
 
+mask_index = sprite_index;
+
 // Check if the GUI mouse is over THIS specific button instance
 if (position_meeting(_mx, _my, id))
 {
