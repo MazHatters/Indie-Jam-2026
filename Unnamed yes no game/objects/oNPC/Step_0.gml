@@ -92,51 +92,7 @@ switch (state)
 			if (oController.npc_count >= oController.npc_limit)
 			{
 				if (!oController.show_result)
-				{
 					oController.show_result = true;
-					var _cx = room_width / 2;
-					var _cy = room_height / 2;
-					// Checks the day quota for all 3 days
-					if (oController.day == 1)
-					{
-						if (oController.revenue >= oController.day1_quota)
-						{
-							if (!instance_exists(oButton_nextday))
-								instance_create_depth(room_width / 2, room_height / 2, -20, oButton_nextday);
-						}
-						else
-						{
-							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_room);
-							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
-						}
-					}						
-					else if (oController.day == 2)
-					{
-						if (oController.revenue >= oController.day2_quota)
-						{
-							if (!instance_exists(oButton_nextday))
-								instance_create_depth(room_width / 2, room_height / 2, -20, oButton_nextday);
-						}
-						else
-						{
-							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_room);
-							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
-						}
-					}
-					else if (oController.day == 3)
-					{
-						if (oController.revenue >= oController.day3_quota)
-						{
-							if (!instance_exists(oButton_nextday))
-								instance_create_depth(room_width / 2, room_height / 2, -20, oButton_nextday);
-						}
-						else
-						{
-							instance_create_depth(_cx - 150, _cy + 150, -20, oButton_restart_r6oom);
-							instance_create_depth(_cx + 150, _cy + 150, -20, oButton_mainmenu);
-						}
-					}	
-				}
 			}
 			else
 				event_perform(ev_create, 0);

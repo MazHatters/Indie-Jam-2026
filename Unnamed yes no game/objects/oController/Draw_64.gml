@@ -5,7 +5,7 @@ if (show_result)
 
     // Draw semi-transparent background
     draw_set_color(c_black);
-    draw_set_alpha(0.7);
+    draw_set_alpha(0.5);
     draw_rectangle(0, 0, _gw, _gh, false);
     draw_set_alpha(1.0);
 
@@ -15,18 +15,24 @@ if (show_result)
 
     var _cx = _gw / 2;
     var _cy = _gh / 2;
+	var _bx = room_width / 2;
+	var _by = room_height / 2;
 
 
 	if (oController.day == 1)
 	{
 		if (oController.revenue >= oController.day1_quota)
 		{
+			if (!instance_exists(oButton_nextday))
+				instance_create_depth(room_width / 2,  (room_height / 2) + 100,  -10, oButton_nextday);
 			draw_set_color(c_lime); // Try lime, might show up better than green
 			draw_text(_cx, _cy - 100, "Project Succeeded!");
 			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
 		}
 		else
 		{
+			instance_create_depth(_bx - 150, _by + 150, -20, oButton_restart_room);
+			instance_create_depth(_bx + 150, _by + 150, -20, oButton_mainmenu);
 			draw_set_color(c_red);
 			draw_text(_cx, _cy - 100, "Project Failed!");
 			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
@@ -36,12 +42,16 @@ if (show_result)
 	{
 		if (oController.revenue >= oController.day2_quota)
 		{
+			if (!instance_exists(oButton_nextday))
+				instance_create_depth(room_width / 2,  (room_height / 2) + 100,  -10, oButton_nextday);
 			draw_set_color(c_lime); // Try lime, might show up better than green
 			draw_text(_cx, _cy - 100, "Project Succeeded!");
 			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
 		}
 		else
 		{
+			instance_create_depth(_bx - 150, _by + 150, -20, oButton_restart_room);
+			instance_create_depth(_bx + 150, _by + 150, -20, oButton_mainmenu);
 			draw_set_color(c_red);
 			draw_text(_cx, _cy - 100, "Project Failed!");
 			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
@@ -51,12 +61,16 @@ if (show_result)
 	{
 		if (oController.revenue >= oController.day3_quota)
 		{
+			if (!instance_exists(oButton_nextday))
+				instance_create_depth(room_width / 2,  (room_height / 2) + 100,  -10, oButton_nextday);
 			draw_set_color(c_lime); // Try lime, might show up better than green
 			draw_text(_cx, _cy - 100, "Project Succeeded!");
 			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
 		}
 		else
 		{
+			instance_create_depth(_bx - 150, _by + 150, -20, oButton_restart_room);
+			instance_create_depth(_bx + 150, _by + 150, -20, oButton_mainmenu);
 			draw_set_color(c_red);
 			draw_text(_cx, _cy - 100, "Project Failed!");
 			draw_text(_cx, _cy, "Total Revenue: " + string(revenue) + " / " + string(day3_quota));
