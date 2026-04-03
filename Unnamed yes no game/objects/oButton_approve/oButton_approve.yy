@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sApprove1",
-    "path":"sprites/sApprove1/sApprove1.yy",
+    "name":"sApproveBig",
+    "path":"sprites/sApproveBig/sApproveBig.yy",
   },
   "spriteMaskId":{
-    "name":"sApprove1",
-    "path":"sprites/sApprove1/sApprove1.yy",
+    "name":"sApproveBig",
+    "path":"sprites/sApproveBig/sApproveBig.yy",
   },
   "visible":true,
 }

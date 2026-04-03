@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlay1",
-    "path":"sprites/sPlay1/sPlay1.yy",
+    "name":"sPlayBig",
+    "path":"sprites/sPlayBig/sPlayBig.yy",
   },
   "spriteMaskId":{
-    "name":"sPlay1",
-    "path":"sprites/sPlay1/sPlay1.yy",
+    "name":"sPlayBig",
+    "path":"sprites/sPlayBig/sPlayBig.yy",
   },
   "visible":true,
 }

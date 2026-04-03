@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNext1",
-    "path":"sprites/sNext1/sNext1.yy",
+    "name":"sNextDayBig",
+    "path":"sprites/sNextDayBig/sNextDayBig.yy",
   },
   "spriteMaskId":{
-    "name":"sNext1",
-    "path":"sprites/sNext1/sNext1.yy",
+    "name":"sNextDayBig",
+    "path":"sprites/sNextDayBig/sNextDayBig.yy",
   },
   "visible":true,
 }

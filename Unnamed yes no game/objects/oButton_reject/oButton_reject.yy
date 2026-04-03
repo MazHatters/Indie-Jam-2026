@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sReject1",
-    "path":"sprites/sReject1/sReject1.yy",
+    "name":"sRejectBig",
+    "path":"sprites/sRejectBig/sRejectBig.yy",
   },
   "spriteMaskId":{
-    "name":"sReject1",
-    "path":"sprites/sReject1/sReject1.yy",
+    "name":"sRejectBig",
+    "path":"sprites/sRejectBig/sRejectBig.yy",
   },
   "visible":true,
 }

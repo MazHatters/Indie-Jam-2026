@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sQuit1",
-    "path":"sprites/sQuit1/sQuit1.yy",
+    "name":"sQuitBig",
+    "path":"sprites/sQuitBig/sQuitBig.yy",
   },
   "spriteMaskId":{
-    "name":"sQuit1",
-    "path":"sprites/sQuit1/sQuit1.yy",
+    "name":"sQuitBig",
+    "path":"sprites/sQuitBig/sQuitBig.yy",
   },
   "visible":true,
 }

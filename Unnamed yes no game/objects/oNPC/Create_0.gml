@@ -26,7 +26,7 @@ else
 state = "ENTERING";
 dialogue_step = 1;
 current_response = "";
-walk_speed = 100; // Standard value: 20, test value: 100
+walk_speed = 20; // Standard value: 20, test value: 100
 target_x = 544;
 
 // Position Reset for New Identity

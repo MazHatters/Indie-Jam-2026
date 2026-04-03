@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMenu1",
-    "path":"sprites/sMenu1/sMenu1.yy",
+    "name":"sMenuBig",
+    "path":"sprites/sMenuBig/sMenuBig.yy",
   },
   "spriteMaskId":{
-    "name":"sMenu1",
-    "path":"sprites/sMenu1/sMenu1.yy",
+    "name":"sMenuBig",
+    "path":"sprites/sMenuBig/sMenuBig.yy",
   },
   "visible":true,
 }

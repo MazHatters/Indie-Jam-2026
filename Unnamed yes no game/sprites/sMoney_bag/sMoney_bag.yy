@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":5,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Money_icons",
+    "path":"folders/Sprites/Money_icons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

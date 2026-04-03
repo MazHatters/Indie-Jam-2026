@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sRestart1",
-    "path":"sprites/sRestart1/sRestart1.yy",
+    "name":"sRestartBig",
+    "path":"sprites/sRestartBig/sRestartBig.yy",
   },
   "spriteMaskId":{
-    "name":"sRestart1",
-    "path":"sprites/sRestart1/sRestart1.yy",
+    "name":"sRestartBig",
+    "path":"sprites/sRestartBig/sRestartBig.yy",
   },
   "visible":true,
 }
