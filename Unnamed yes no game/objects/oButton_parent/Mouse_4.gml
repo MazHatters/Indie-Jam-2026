@@ -44,17 +44,19 @@ if (point_in_rectangle(_mx, _my, gui_x - _w2, gui_y - _h2, gui_x + _w2, gui_y + 
 
 		case oButton_restart_room:
 			oController.npc_count = 0;
-			oController.revenue = 0;
 			oController.show_result = false;
-			oController.day = 1;
+			oController.revenue = 0;
+			oController.day += 1;
+			with(oController) { event_perform(ev_create, 0); }
 			room_restart();
 		break;
 
 		case oButton_mainmenu:
 			oController.npc_count = 0;
-			oController.revenue = 0;
 			oController.show_result = false;
-			oController.day = 1;
+			oController.revenue = 0;
+			oController.day += 1;
+			with(oController) { event_perform(ev_create, 0); }
 			room_goto(Main_menu);
 		break;
 	}
