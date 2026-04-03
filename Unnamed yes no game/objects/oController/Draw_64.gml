@@ -20,12 +20,28 @@ if (show_result)
 
 	if (revenue >= _target_quota)
 	{
-		// Spawn exactly once
-		if (!instance_exists(oButton_nextday)) instance_create_depth(0, 0, -1000, oButton_nextday);
-		
-		draw_set_color(c_lime);
-		draw_text(_cx, _cy - 100, "Project Succeeded!");
-		draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
+		if (day == 3)
+		{
+			// Final Success: Destroyed Nature
+			if (!instance_exists(oButton_restart_room)) 
+			{
+				instance_create_depth(0, 0, -1000, oButton_restart_room);
+				instance_create_depth(0, 0, -1000, oButton_mainmenu);
+			}
+			
+			draw_set_color(c_orange);
+			draw_text_ext(_cx, _cy - 100, "Congratulations, you have successfully destroyed nature in exchange for economic growth", 40, 800);
+			draw_text(_cx, _cy + 100, "Total Revenue: " + string(revenue));
+		}
+		else
+		{
+			// Regular Success
+			if (!instance_exists(oButton_nextday)) instance_create_depth(0, 0, -1000, oButton_nextday);
+			
+			draw_set_color(c_lime);
+			draw_text(_cx, _cy - 100, "Project Succeeded!");
+			draw_text(_cx, _cy, "Total Revenue: " + string(revenue));
+		}
 	}
 	else
 	{
