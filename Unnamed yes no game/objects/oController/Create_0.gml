@@ -52,3 +52,5 @@ npc_count = 0;
 player_choice = "WAITING";
 show_result = false;
 depth = -10;
+
+current_music = -1;

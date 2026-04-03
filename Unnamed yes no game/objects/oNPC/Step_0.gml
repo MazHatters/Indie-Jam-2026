@@ -3,11 +3,13 @@ if (!instance_exists(oController)) exit; // <- Unlikely possible as oController 
 switch (state)
 {
 	case "ENTERING":
+		if (!audio_is_playing(NPC_FootSteps)) NPC_FootSteps = audio_play_sound(soFootsteps, 10, true);
 		image_xscale = 1;
 		if (x > target_x)
 			x -= walk_speed;
 		else
 		{
+			if (audio_is_playing(NPC_FootSteps)) audio_stop_sound(NPC_FootSteps);
 			state = "TALKING";
 			dialogue_step = 1;
 			char_count = 0;
@@ -103,10 +105,12 @@ switch (state)
 	break;
 
 	case "EXITING":
+		if (!audio_is_playing(NPC_FootSteps)) NPC_FootSteps = audio_play_sound(soFootsteps, 10, true);
 	image_xscale = -1;
 		x += walk_speed;
 		if (x >= 1408)
 		{
+			if (audio_is_playing(NPC_FootSteps)) audio_stop_sound(NPC_FootSteps);
 			oController.player_choice = "WAITING";
 			if (oController.npc_count >= oController.npc_limit)
 			{

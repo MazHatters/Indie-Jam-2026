@@ -41,3 +41,5 @@ type_speed = 0.5;         // Speed of text (higher = faster)
 box_height = 150;         // Height of the black dialogue bar
 text_padding = 40;        // Space from the edge of the box
 full_text = "";           // The complete string we are currently typing
+
+NPC_FootSteps = -1;

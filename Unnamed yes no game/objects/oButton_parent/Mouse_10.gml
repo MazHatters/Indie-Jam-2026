@@ -1,3 +1,5 @@
+audio_play_sound(soMouseHover, 10, false);
+
 switch (object_index)
 {
 	case oButton_approve:		sprite_index = sApproveSmall; break;
