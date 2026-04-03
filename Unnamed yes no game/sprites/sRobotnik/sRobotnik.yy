@@ -23,7 +23,7 @@
   ],
   "name":"sRobotnik",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"NPC_sprites",
     "path":"folders/Sprites/NPC_sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":125,
-    "yorigin":250,
+    "yorigin":125,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

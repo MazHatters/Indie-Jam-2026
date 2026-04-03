@@ -25,14 +25,12 @@ if (point_in_rectangle(_mx, _my, gui_x - _w2, gui_y - _h2, gui_x + _w2, gui_y + 
 		break;
 		
 		case oButton_approve:
-			audio_play_sound(soGetMoney, 10, false);
 			oController.player_choice = "APPROVE";
 			instance_destroy(oButton_reject);
 			instance_destroy();
 		break;
 		
 		case oButton_reject:
-			audio_play_sound(soLoseMoney, 10, false);
 			oController.player_choice = "REJECT";
 			instance_destroy(oButton_approve);
 			instance_destroy();

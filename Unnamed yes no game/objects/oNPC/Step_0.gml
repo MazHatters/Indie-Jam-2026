@@ -57,6 +57,8 @@ switch (state)
 			char_count = 0;
 			state = "RESPONSE";
 			oController.revenue += profit;
+			if (profit >= 0) audio_play_sound(soGetMoney, 10, false);
+			else audio_play_sound(soLoseMoney, 10, false);
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
 			_ft.text = (profit >= 0 ? "+" : "") + string(profit);
 			if (profit >= 0)
@@ -78,6 +80,8 @@ switch (state)
 			char_count = 0;
 			state = "RESPONSE";
 			oController.revenue += lose;
+			if (lose >= 0) audio_play_sound(soGetMoney, 10, false);
+			else audio_play_sound(soLoseMoney, 10, false);
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
 			_ft.text = string(lose);
 			if (lose >= 0)

@@ -54,3 +54,9 @@ show_result = false;
 depth = -10;
 
 current_music = -1;
+
+if (room == Main_menu) 
+{
+    current_music = audio_play_sound(soMain_menu_Dagored___Harlem_Heat__freetouse_com_, 100, true);
+    audio_sound_gain(current_music, 1, 0);
+}
