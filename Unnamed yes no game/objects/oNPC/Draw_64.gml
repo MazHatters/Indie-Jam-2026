@@ -3,14 +3,12 @@ var _gui_h = display_get_gui_height();
 
 if (state == "TALKING" || state == "DECIDING" || state == "RESPONSE")
 {
-	//draw_set_alpha(0.8);
-	//draw_set_color(c_black);
-	//draw_rectangle(0, _gui_h - box_height, _gui_w, _gui_h, false);
 	layer_set_visible("Dialogue_box", true);
 	draw_set_alpha(1);
 
 	draw_set_color(c_black);
 	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	draw_text(40, _gui_h - box_height + 30, identity + ":");
 
 	var _print_text = string_copy(full_text, 1, floor(char_count));
