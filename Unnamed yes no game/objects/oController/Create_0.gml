@@ -48,9 +48,9 @@ array_shuffle_ext(npc_master_list);
 
 day = 1;
 npc_limit = 0;
-day1_quota = 400;
-day2_quota = 700;
-day3_quota = 1000;
+day1_quota = 500;
+day2_quota = 1000;
+day3_quota = 1500;
 revenue = 0;
 nature = 0;
 npc_count = 0;
