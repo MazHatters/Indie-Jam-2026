@@ -29,8 +29,8 @@ if (window_has_focus())
         // 1. Resize the World Surface
         surface_resize(application_surface, _ww, _wh);
         
-        // 2. Lock the GUI to the Window Pixels
-        display_set_gui_size(_ww, _wh);
+        // 2. Lock the GUI to the Window Pixels (DEPRECATED: Using fixed resolution now)
+        // display_set_gui_size(_ww, _wh);
         display_set_gui_maximize(); // CRITICAL: Prevents GUI "Ghosting" or Offset
         
         // 3. Prevent Camera Stretching

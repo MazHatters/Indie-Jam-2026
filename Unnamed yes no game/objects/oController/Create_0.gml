@@ -1,5 +1,10 @@
 randomise();
 
+// Set base resolution for GUI scaling
+base_gui_width = 1280;
+base_gui_height = 720;
+display_set_gui_size(base_gui_width, base_gui_height);
+
 // --- NPC IDENTITY DATABASE ---
 npc_master_list = [
 	{name: "Mr. Deepwater Profit", dialogue1: "Relax. It's just a small offshore project", dialogue2: "Statistically, spills are rare.", dialogue3: "Let's not focus on outliers.", approve: "We'll name the rig after you.", reject: "We'll do it somewhere poorer.", sprite: sMr_deep_water_profit, gain: 130, lost: -40},
