@@ -1,8 +1,37 @@
 // Check if we have anyone left in the pool
 if (array_length(oController.npc_master_list) > 0)
 {
-	// "Pop" the first NPC off the list (removes them from the array)
-	var chosen = array_shift(oController.npc_master_list);
+	var _found = false;
+	var _attempts = 0;
+	var _max_attempts = array_length(oController.npc_master_list);
+	var chosen = undefined;
+
+	while (!_found && _attempts < _max_attempts)
+	{
+		chosen = oController.npc_master_list[0];
+		// A "loss NPC" is one where both Approve and Reject lead to a revenue reduction (or zero)
+		var _is_loss_npc = (chosen.gain < 0 && chosen.lost < 0);
+		
+		if (_is_loss_npc && (oController.loss_npc_count >= 1 || oController.day == 1))
+		{
+			// Daily limit reached OR Day 1 restriction. Recycle to the end of the pool.
+			array_push(oController.npc_master_list, array_shift(oController.npc_master_list));
+			_attempts++;
+		}
+		else
+		{
+			// Valid NPC found (either not a loss NPC, or we haven't reached the daily limit yet)
+			_found = true;
+			array_shift(oController.npc_master_list);
+			if (_is_loss_npc) oController.loss_npc_count += 1;
+		}
+	}
+
+	// Safety: If after max attempts we only have loss NPCs, just take the first one anyway
+	if (!_found && chosen != undefined)
+	{
+		chosen = array_shift(oController.npc_master_list);
+	}
 
 	identity = chosen.name;
 	text1 = chosen.dialogue1;

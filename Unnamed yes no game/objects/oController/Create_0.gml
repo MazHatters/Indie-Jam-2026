@@ -10,7 +10,7 @@ npc_master_list = [
 	{name: "Mr. Deepwater Profit", dialogue1: "Hey pal.", dialogue2: "I wanna 'borrow' some cash for offshore oil drilling.", dialogue3: "It's just a small dent in the wallet, iif ya know what I mean.", approve: "That's the spirit, chum.", reject: "Fine, I don't need your money.", sprite: sMr_deep_water_profit, gain: -50, lost: 150},
 	{name: "Chad Ecovision tm", dialogue1: "Yoooo", dialogue2: "you should totally build your own infinity pool.", dialogue3: "All the cool billionares have one", approve: "THAT'S what I'm talking about.", reject: "Well screw you, I'll just find rich idiots instead.", sprite: sGigachad, gain: -50, lost: 100},
 	{name: "Synergy Sam", dialogue1: "SURRENDER YOUR MONEY.", dialogue2: "IT WILL STRENGTHEN MY POWER", dialogue3: "DO IT NOW.", approve: "YES....  ALL THE PRECIOUS FUEL IS MINE!!!.", reject: "My powers.... are fading....", sprite: sSynergy_sam, gain: -50, lost: 100},
-	{name: "Tim Burr, CEO", dialogue1: "Hey Min-man,.", dialogue2: "the trees are taunting me", dialogue3: "I need some cash to throw at the trees, literally.", approve: "I knew you were cool.", reject: "How bland. What's the point of having money", sprite: sTim_burr, gain: -50, lost: 150},
+	{name: "Tim Burr, CEO", dialogue1: "Hey Min-man,", dialogue2: "the trees are taunting me", dialogue3: "I need some cash to throw at the trees, literally.", approve: "I knew you were cool.", reject: "How bland. What's the point of having money", sprite: sTim_burr, gain: -50, lost: 150},
 	{name: "Captain Overcatch", dialogue1: "All the fish will be mine.", dialogue2: "I will purify the waters.", dialogue3: "Awaiting orders.", approve: "Zero fish left behind.", reject: "You're doomed us all....", sprite: sCaptain_overcatch, gain: -50, lost: 100},
 	{name: "Datuk Highway Bin Fake Resume", dialogue1: "Yeah man, I totatlly know how to build a highway.", dialogue2: "You've already seen my resume.", dialogue3: "I am totally certified.", approve: "I've been waiting my whole life for this.", reject: "You DARE deny me of my PASSION?!.", sprite: sDatuk_highway, gain: -50, lost: 100},
 	{name: "Mr. Clean Coal tm", dialogue1: "I love coals.", dialogue2: "Give me money to but more coals.", dialogue3: "Coal coal coal coal.", approve: "I will show this world the power of coal.", reject: "I know what you're getting for Christmas.", sprite: sMr_clean_coal, gain: -50, lost: 150},
@@ -54,6 +54,7 @@ day3_quota = 1500;
 revenue = 0;
 nature = 0;
 npc_count = 0;
+loss_npc_count = 0;
 player_choice = "WAITING";
 show_result = false;
 depth = -10;

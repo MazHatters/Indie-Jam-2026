@@ -41,6 +41,7 @@ if (point_in_rectangle(_mx, _my, gui_x - _w2, gui_y - _h2, gui_x + _w2, gui_y + 
 			oController.npc_count = 0;
 			oController.show_result = false;
 			oController.revenue = 0;
+			oController.loss_npc_count = 0;
 			oController.day += 1;
 			instance_destroy();
 			with(oNPC) { event_perform(ev_create, 0); }
@@ -50,6 +51,7 @@ if (point_in_rectangle(_mx, _my, gui_x - _w2, gui_y - _h2, gui_x + _w2, gui_y + 
 			oController.npc_count = 0;
 			oController.show_result = false;
 			oController.revenue = 0;
+			oController.loss_npc_count = 0;
 			// FIXED: Should not increment day on restart
 			with(oController) { event_perform(ev_create, 0); }
 			room_restart();
@@ -59,6 +61,7 @@ if (point_in_rectangle(_mx, _my, gui_x - _w2, gui_y - _h2, gui_x + _w2, gui_y + 
 			oController.npc_count = 0;
 			oController.show_result = false;
 			oController.revenue = 0;
+			oController.loss_npc_count = 0;
 			if (oController.current_music != -1) audio_sound_gain(oController.current_music, 0, 500);
 			oController.current_music = audio_play_sound(soMain_menu_Dagored___Harlem_Heat__freetouse_com_, 100, true);
 			audio_sound_gain(oController.current_music, 0, 0);
