@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"oMoney_bar",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oMoney_bar",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sMoney_bar_no_highlight",
+    "path":"sprites/sMoney_bar_no_highlight/sMoney_bar_no_highlight.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

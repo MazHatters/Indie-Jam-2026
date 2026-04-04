@@ -23,7 +23,7 @@
   ],
   "name":"sMoney_bag",
   "nineSlice":null,
-  "origin":5,
+  "origin":4,
   "parent":{
     "name":"Money_icons",
     "path":"folders/Sprites/Money_icons.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":80,
+    "xorigin":40,
     "yorigin":40,
   },
   "swatchColours":null,
