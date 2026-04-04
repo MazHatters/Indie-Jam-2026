@@ -136,6 +136,8 @@
     {"id":{"name":"sPrime_minister","path":"sprites/sPrime_minister/sPrime_minister.yy",},},
     {"id":{"name":"sQuitBig","path":"sprites/sQuitBig/sQuitBig.yy",},},
     {"id":{"name":"sQuitSmall","path":"sprites/sQuitSmall/sQuitSmall.yy",},},
+    {"id":{"name":"sRainforest_day2","path":"sprites/sRainforest_day2/sRainforest_day2.yy",},},
+    {"id":{"name":"sReefs__day2","path":"sprites/sReefs__day2/sReefs__day2.yy",},},
     {"id":{"name":"sRejectBig","path":"sprites/sRejectBig/sRejectBig.yy",},},
     {"id":{"name":"sRejectSmall","path":"sprites/sRejectSmall/sRejectSmall.yy",},},
     {"id":{"name":"sRestartBig","path":"sprites/sRestartBig/sRestartBig.yy",},},

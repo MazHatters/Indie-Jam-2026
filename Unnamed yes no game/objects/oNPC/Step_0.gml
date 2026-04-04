@@ -61,12 +61,12 @@ switch (state)
 			else audio_play_sound(soLoseMoney, 10, false);
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
 			_ft.text = (profit >= 0 ? "+" : "") + string(profit);
-			if (profit >= 0)
+			if (profit > 0)
 			{
 				_ft.text_color = c_yellow;
 				_ft.float_direction = 1;
 			}
-			else if (profit < 0)
+			else if (profit <= 0)
 			{
 				_ft.text_color = c_red;
 				_ft.float_direction = -1;
@@ -84,12 +84,12 @@ switch (state)
 			else audio_play_sound(soLoseMoney, 10, false);
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
 			_ft.text = string(lose);
-			if (lose >= 0)
+			if (lose > 0)
 			{
 				_ft.text_color = c_yellow;
 				_ft.float_direction = 1;
 			}
-			else if (lose < 0)
+			else if (lose <= 0)
 			{
 				_ft.text_color = c_red;
 				_ft.float_direction = -1;
