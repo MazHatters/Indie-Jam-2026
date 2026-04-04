@@ -41,7 +41,7 @@ npc_master_list = [
 	{name: "Grandma", dialogue1: "Hey sweetie!", dialogue2: "I've made some money seling cookies.", dialogue3: "Heres some pocket money", approve: "Don't push yourself too hard.", reject: "Aww you shouldn't have.", sprite: sGrandma_ethel, gain: 100, lost: -50},
 	{name: "Mutant Fish Leader", dialogue1: "We evolved.", dialogue2: "We thrive in poison.", dialogue3: "Make more.", approve: "We grow.", reject: "We adapt anyway.", sprite: sFishOuttaWotah, gain: 100, lost: -50},
 	{name: "Lonely Skeleton", dialogue1: "I need more graves.", dialogue2: "More friends.", dialogue3: "Cut trees.", approve: "More friends <:", reject: "I forgive you.", sprite: sSkeleton_Papyrus, gain: 100, lost: -50},
-	{name: "Wife", dialogue1:"Honey, can I have money?", dialogue2: "All my friends got the new handbag,", dialogue3: "Pretty pleaseeeee", approve: "Yayyy I love you! :3  Best husband ever!! >w<", reject: "I'm filing a divorce.", sprite: sWife,  gain: -100, lost: -500}
+	{name: "Wife", dialogue1:"Honey, can I have money?", dialogue2: "All my friends got the new handbag,", dialogue3: "Pretty pleaseeeee", approve: "Yayyy I love you! :3  Best husband ever!! >w<", reject: "I'm filing a divorce.", sprite: sWife,  gain: -100, lost: -100}
 ];
 
 array_shuffle_ext(npc_master_list);

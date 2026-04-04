@@ -79,17 +79,37 @@ switch (state)
 			full_text = current_response;
 			char_count = 0;
 			state = "RESPONSE";
-			oController.revenue += lose;
-			if (lose >= 0) audio_play_sound(soGetMoney, 10, false);
+			
+			var _final_loss = lose;
+			
+			// Special Logic for Wife: Lose half of total revenue
+			if (identity == "Wife")
+			{
+				if (oController.revenue > 0)
+				{
+					_final_loss = -floor(oController.revenue / 2);
+				}
+				else
+				{
+					// If revenue is 0 or negative, just apply the standard "lost" amount
+					_final_loss = lose;
+				}
+			}
+			
+			oController.revenue += _final_loss;
+			
+			if (_final_loss >= 0) audio_play_sound(soGetMoney, 10, false);
 			else audio_play_sound(soLoseMoney, 10, false);
+			
 			var _ft = instance_create_layer(156, 350, "Dialog_choice_revenue", oFloatingText);
-			_ft.text = string(lose);
-			if (lose > 0)
+			_ft.text = string(_final_loss);
+			
+			if (_final_loss > 0)
 			{
 				_ft.text_color = c_yellow;
 				_ft.float_direction = 1;
 			}
-			else if (lose <= 0)
+			else if (_final_loss <= 0)
 			{
 				_ft.text_color = c_red;
 				_ft.float_direction = -1;
